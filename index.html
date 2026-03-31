@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Let's Chao Food Menu</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+        }
+
+        h2 {
+            font-weight: 600;
+        }
+
+        .card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.best-seller-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.card-body {
+    font-size: 0.9rem;
+}
+
+    
+.addon-panel {
+    
+    
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Stack items vertically */
+#addon-items .card {
+    margin-bottom: 10px;
+}
+
+/* Smaller images */
+#addon-items img {
+    height: 100px;
+    object-fit: cover;
+}
+        .menu-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;          /* same size */
+    margin-bottom: 4px;
+}
+
+.menu-row span:last-child {
+    font-weight: 500;
+}
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-danger shadow-sm">
+    <div class="container-fluid">
+
+        <!-- Logo + Store Name -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/Logo.jpg" alt="Logo" width="60" height="60" class="me-2 rounded-circle">
+            <span class="fw-bold">Let's Chao!</span>
+        </a>
+
+        <!-- Optional Right Side -->
+        <div class="d-flex align-items-center text-dark">
+            <span class="me-3">🛒 Cart</span>
+            <span>👤 Admin</span>
+        </div>
+
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Sidebar -->
+        <div class="col-md-2 bg-light sidebar p-3">
+            <h5 class="mb-3">Menu</h5>
+
+            <div class="list-group">
+                <button class="list-group-item list-group-item-action active category-btn" data-category="all">All</button>
+                <button class="list-group-item list-group-item-action category-btn" data-category="friedrice">🍚 Chao Fan</button>
+                <button class="list-group-item list-group-item-action category-btn" data-category="platters">🍱 Platters</button>
+                <button class="list-group-item list-group-item-action category-btn" data-category="icecream">🍦 Ice Cream</button>
+                 <button class="list-group-item list-group-item-action category-btn" data-category="yogurt">🍨 Yogurts</button>
+                 <button class="list-group-item list-group-item-action category-btn" data-category="float">🥤🍦 Floats</button>
+                  <button class="list-group-item list-group-item-action category-btn" data-category="milktea">🧋 Milk Tea</button>
+                <button class="list-group-item list-group-item-action category-btn" data-category="coffee">☕ Ice Coffee</button>
+                <button class="list-group-item list-group-item-action category-btn" data-category="milkbase">🥛 Milk Base</button>
+                <button class="list-group-item list-group-item-action category-btn" data-category="fruitea">🍓 Fruitea</button>
+                  <button class="list-group-item list-group-item-action category-btn" data-category="freshdrink">🥤 Fresh Drinks</button>
+                 <button class="list-group-item list-group-item-action category-btn" data-category="snacks">🍟 Snacks</button>
+            </div>
+        </div>
+
+        <!-- Menu Content -->
+        <div class="col-md-8 p-4">
+            <div class="row" id="menu-items">
+
+                
+            </div>
+        </div>
+
+         <!-- ADD-ONS PANEL (RIGHT SIDE) -->
+        <div class="col-md-2 p-3">
+            <div id="addon-section" class="addon-panel m-2" style="display:none;">
+                <h5>Chao Fan Add-ons</h5>
+                <div id="addon-items"></div>
+            </div>
+
+            <div id="addon-section-milktea" class="addon-panel m-2" style="display:none;">
+                <h5>Milk Tea Add-ons</h5>
+                <div id="addon-items-milktea"></div>
+            </div>
+
+            <div id="addon-section-snacks" class="addon-panel m-2" style="display:none;">
+                <h5>Snacks Add-ons</h5>
+                <div id="addon-items-snacks"></div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="menu.js"></script>
+<script>
+    $(document).ready(function () {
+
+    renderMenu(menuList.sort((a, b) => {
+        return categoryOrder.indexOf(a.category) - categoryOrder.indexOf(b.category);
+    }));
+
+    $('#addon-section').show();
+    renderAddOns(addOns);
+    $('#addon-section-milktea').show();
+    renderMilkTeaAddOns(milkTeaAddOns);
+
+     $('#addon-section-snacks').show();
+    renderSnacksAddOns(snacksAddOns);
+
+        
+
+    // CATEGORY FILTER
+    $('.category-btn').on('click', function () {
+        $('.category-btn').removeClass('active');
+        $(this).addClass('active');
+
+        const category = $(this).data('category');
+
+        if (category === 'all') {
+            renderMenu(menuList.sort((a, b) => {
+    return categoryOrder.indexOf(a.category) - categoryOrder.indexOf(b.category);
+}));
+        } else {
+            const filtered = menuList.filter(x => x.category === category);
+            renderMenu(filtered);
+        }
+        // SHOW ADDONS
+        if(category === "all"){
+            $('#addon-section').show();
+            renderAddOns(addOns);
+            $('#addon-section-milktea').show();
+            renderMilkTeaAddOns(milkTeaAddOns);
+
+             $('#addon-section-snacks').show();
+            renderSnacksAddOns(snacksAddOns);
+        }
+        else if (category === "friedrice" ) {
+            $('#addon-section').show();
+            renderAddOns(addOns);
+
+             $('#addon-section-milktea').hide();
+            $('#addon-section-snacks').hide();
+        }
+        else if(category === "milktea"){
+            $('#addon-section-milktea').show();
+            renderMilkTeaAddOns(milkTeaAddOns);
+
+             $('#addon-section').hide();
+            $('#addon-section-snacks').hide();
+        }
+        else if(category === "snacks"){
+            $('#addon-section-snacks').show();
+            renderSnacksAddOns(snacksAddOns);
+
+             $('#addon-section').hide();
+            $('#addon-section-milktea').hide();
+        } 
+        else {
+            $('#addon-section').hide();
+            $('#addon-section-milktea').hide();
+             $('#addon-section-snacks').hide();
+        }
+
+    });
+
+});
+
+function renderMenu(list) {
+
+    let html = "";
+
+    list.forEach(item => {
+
+        // VARIETIES DISPLAY
+        let varietyHtml = "";
+        // MAIN ITEM
+        varietyHtml += `
+            <div class="menu-row fw-bold">
+                <span>${item.name}</span>
+                <span class="text-info">${item.price ? `₱${item.price}` : ''}</span>
+            </div>
+        `;
+        
+        // VARIATIONS
+        if (item.varieties) {
+            item.varieties.forEach(v => {
+                varietyHtml += `
+                    <div class="menu-row fw-bold">
+                        <span>${v.name}</span>
+                        <span class="text-info">${v.price ? `₱${v.price}` : ''}</span>
+                    </div>
+                `;
+            });
+        }
+        // FLAVORS DISPLAY
+        let flavorHtml = "";
+        if (item.flavors && item.flavors.length > 0) {
+
+            flavorHtml += `<div class="text-start small mb-2">
+                                <strong>Flavors:</strong><br>`;
+
+            item.flavors.forEach(f => {
+                flavorHtml += `• ${f.name} ${f.price ? `( +₱${f.price} )` : ''}<br>`;
+            });
+
+            flavorHtml += `</div>`;
+        }
+
+        html += `
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm position-relative">
+
+                ${item.bestSeller ? '<span class="badge bg-danger best-seller-badge">🔥 Best Seller</span>' : ''}
+
+                <img src="${item.image}" class="card-img-top" loading="lazy">
+
+                <div class="card-body">
+                    
+                    ${varietyHtml}
+                    ${flavorHtml}
+                </div>
+            </div>
+        </div>`;
+    });
+    $('#menu-items').html(html);
+}
+
+function renderAddOns(addOns) {
+
+    let html = "";
+
+    addOns.forEach(add => {
+        html += `
+        <div class="card shadow-sm">
+            <div class="card-body text-center p-1">
+                <small class="mb-0">${add.name}</small>
+                <small class="text-success"> ${add.price ? ` +₱${add.price}` : ''}</small>
+            </div>
+        </div>`;
+    });
+
+    $('#addon-items').html(html);
+
+    
+}
+
+function renderMilkTeaAddOns(addOns) {
+
+    let html = "";
+
+    addOns.forEach(add => {
+        html += `
+        <div class="card shadow-sm">
+            <div class="card-body text-center p-1">
+                <small class="mb-0">${add.name}</small>
+                <small class="text-success"> ${add.price ? ` +₱${add.price}` : ''}</small>
+            </div>
+        </div>`;
+    });
+
+    $('#addon-items-milktea').html(html);
+
+    
+}
+    function renderSnacksAddOns(addOns) {
+
+    let html = "";
+
+    addOns.forEach(add => {
+        html += `
+        <div class="card shadow-sm">
+            <div class="card-body text-center p-1">
+                <small class="mb-0">${add.name}</small>
+                <small class="text-success"> ${add.price ? ` +₱${add.price}` : ''}</small>
+            </div>
+        </div>`;
+    });
+
+    $('#addon-items-snacks').html(html);
+
+    
+}
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
