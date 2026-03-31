@@ -18,7 +18,7 @@ const menuList = [
         name: "Pork Chaofan Alacarte",
         price: 39,
         category: "friedrice",
-        image: "images/chaofanalacarte.webp",
+        image: "Images/chaofanalacarte.webp",
         bestSeller: false,
         varieties: [
             { name: "Bagoong Chaofan Alacarte", price: 49 },
@@ -30,7 +30,7 @@ const menuList = [
         name: "Pork Chaofan Egg",
         price: 54,
         category: "friedrice",
-        image: "images/cf-egg1.webp",
+        image: "Images/cf-egg1.webp",
         bestSeller: false,
         varieties: [
             { name: "Bagoong Chaofan Egg", price: 64 },
@@ -42,7 +42,7 @@ const menuList = [
         name: "Strawberry w/ Oreo Yogurt",
         price: null,
         category: "yogurt",
-        image: "images/StrawberryYogurt.webp",
+        image: "Images/StrawberryYogurt.webp",
         bestSeller: true,
         varieties: [
             { name: "Medium", price:69 },
@@ -55,7 +55,7 @@ const menuList = [
         name: "Caramel and Graham Yogurt",
         price: null,
         category: "yogurt",
-        image: "images/CaramelYogurt.webp",
+        image: "Images/CaramelYogurt.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium", price:69 },
@@ -68,7 +68,7 @@ const menuList = [
         name: "Blueberry w/ Nata Yogurt",
         price: null,
         category: "yogurt",
-        image: "images/BlueberryYogurt.webp",
+        image: "Images/BlueberryYogurt.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium", price:69 },
@@ -81,7 +81,7 @@ const menuList = [
         name: "Caramel w/ Mallows Ice Cream",
         price:null ,
         category: "icecream",
-        image: "images/caramelwmIcecream.webp",
+        image: "Images/caramelwmIcecream.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium", price:39 },
@@ -94,7 +94,7 @@ const menuList = [
         name: "Coffee Jelly w/ Oreo Ice Cream",
         price: null,
         category: "icecream",
-        image: "images/CJIcecream.webp",
+        image: "Images/CJIcecream.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium", price:39 },
@@ -107,7 +107,7 @@ const menuList = [
         name: "Pork Chaofan Siomai",
         price: 79,
         category: "friedrice",
-        image: "images/cf-egg-siomai.webp",
+        image: "Images/cf-egg-siomai.webp",
         bestSeller: false,
         varieties: [
             { name: "Bagoong Chaofan Siomai", price: 89 },
@@ -119,7 +119,7 @@ const menuList = [
         name: "Pork Chaofan Hotdog",
         price: 79,
         category: "friedrice",
-        image: "images/cf-egg-hotdog.webp",
+        image: "Images/cf-egg-hotdog.webp",
         bestSeller: false,
         varieties: [
             { name: "Bagoong Chaofan Hotdog", price: 89 },
@@ -131,7 +131,7 @@ const menuList = [
         name: "Pork Chaofan Shanghai",
         price: 89,
         category: "friedrice",
-        image: "images/cf-egg-shanghai.webp",
+        image: "Images/cf-egg-shanghai.webp",
         bestSeller: true,
         varieties: [
             { name: "Bagoong Chaofan Shanghai", price: 99 },
@@ -143,7 +143,7 @@ const menuList = [
         name: "Pork Chaofan Spam",
         price: 89,
         category: "friedrice",
-        image: "images/cf-egg-spam.webp",
+        image: "Images/cf-egg-spam.webp",
         bestSeller: true,
         varieties: [
             { name: "Bagoong Chaofan Spam", price: 99 },
@@ -155,7 +155,7 @@ const menuList = [
         name: "Pork Chaofan Bangus",
         price: 109,
         category: "friedrice",
-        image: "images/cf-egg-bangus.webp",
+        image: "Images/cf-egg-bangus.webp",
         bestSeller: false,
         varieties: [
             { name: "Bagoong Chaofan Bangus", price: 119 },
@@ -167,7 +167,7 @@ const menuList = [
         name: "Pork Chaofan Porkchop",
         price: 120,
         category: "friedrice",
-        image: "images/cf-egg-chicken.webp",
+        image: "Images/cf-egg-chicken.webp",
         bestSeller: true,
         varieties: [
             { name: "Bagoong Chaofan Porkchop", price: 130 },
@@ -179,7 +179,7 @@ const menuList = [
         name: "Pork Chaofan Tonkatsu",
         price: 125,
         category: "friedrice",
-        image: "images/cf-egg-tonkatsu.webp",
+        image: "Images/cf-egg-tonkatsu.webp",
         bestSeller: false,
         varieties: [
             { name: "Bagoong Chaofan Tonkatsu", price: 135 },
@@ -191,7 +191,7 @@ const menuList = [
         name: "Pork Chaofan Overload",
         price: 120,
         category: "friedrice",
-        image: "images/cf-egg-overload.webp",
+        image: "Images/cf-egg-overload.webp",
         bestSeller: true,
         varieties: [
             { name: "Bagoong Chaofan Overload", price: 130 },
@@ -203,7 +203,7 @@ const menuList = [
         name: "Pork Chaofan Butterfly Squid",
         price: 149,
         category: "friedrice",
-        image: "images/cf-egg-squid.webp",
+        image: "Images/cf-egg-squid.webp",
         bestSeller: true,
         varieties: [
             { name: "Bagoong Chaofan Butterfly Squid", price: 159 },
@@ -215,7 +215,7 @@ const menuList = [
         name: "Pork Chaofan Giant Liempo",
         price: 180,
         category: "friedrice",
-        image: "images/cf-egg-liempo.webp",
+        image: "Images/cf-egg-liempo.webp",
         bestSeller: true,
         varieties: [
             { name: "Bagoong Chaofan Giant Liempo", price: 190 },
@@ -227,7 +227,7 @@ const menuList = [
         name: "Pork Chaofan Tapa",
         price: 149,
         category: "friedrice",
-        image: "images/cf-egg-tapa.webp",
+        image: "Images/cf-egg-tapa.webp",
         bestSeller: true,
         varieties: [
             { name: "Bagoong Chaofan Tapa", price: 159 },
@@ -239,7 +239,7 @@ const menuList = [
         name: "Pork Chaofan Chicken Wings",
         price: 105,
         category: "friedrice",
-        image: "images/cf-egg-chickenwing.webp",
+        image: "Images/cf-egg-chickenwing.webp",
         bestSeller: true,
         varieties: [
             { name: "Bagoong Chaofan Wings", price:115 },
@@ -259,7 +259,7 @@ const menuList = [
         name: "Iced Americano",
         price: null,
         category: "coffee",
-        image: "images/1000031110.webp",
+        image: "Images/1000031110.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:60 },
@@ -272,7 +272,7 @@ const menuList = [
         name: "Caramel Macchiato",
         price: null,
         category: "coffee",
-        image: "images/1000031107.webp",
+        image: "Images/1000031107.webp",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:69 },
@@ -285,7 +285,7 @@ const menuList = [
         name: "Cafe Latte",
         price: null,
         category: "coffee",
-        image: "images/1000031108.webp",
+        image: "Images/1000031108.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:69 },
@@ -298,7 +298,7 @@ const menuList = [
         name: "Coffee Jelly Latte",
         price: null,
         category: "coffee",
-        image: "images/1000031112.webp",
+        image: "Images/1000031112.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:80 },
@@ -311,7 +311,7 @@ const menuList = [
         name: "Ice Mocha",
         price:null ,
         category: "coffee",
-        image: "images/1000031109.webp",
+        image: "Images/1000031109.webp",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:70 },
@@ -324,7 +324,7 @@ const menuList = [
         name: "Mango Milk",
         price:null ,
         category: "milkbase",
-        image: "images/milkbasem.webp",
+        image: "Images/milkbasem.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:70 },
@@ -337,7 +337,7 @@ const menuList = [
         name: "Blueberry Milk",
         price: null,
         category: "milkbase",
-        image: "images/milkbaseb.webp",
+        image: "Images/milkbaseb.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:70 },
@@ -350,7 +350,7 @@ const menuList = [
         name: "Strawberry Milk",
         price: null,
         category: "milkbase",
-        image: "images/milkbases.webp",
+        image: "Images/milkbases.webp",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:70 },
@@ -363,7 +363,7 @@ const menuList = [
         name: "Choco Milk",
         price: null,
         category: "milkbase",
-        image: "images/milkbasec.webp",
+        image: "Images/milkbasec.webp",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:70 },
@@ -376,7 +376,7 @@ const menuList = [
         name: "Kiwi",
         price: null,
         category: "fruitea",
-        image: "images/ftkiwi.webp",
+        image: "Images/ftkiwi.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:39 },
@@ -389,7 +389,7 @@ const menuList = [
         name: "Blueberry",
         price: null,
         category: "fruitea",
-        image: "images/ftblueberry.webp",
+        image: "Images/ftblueberry.webp",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:39 },
@@ -402,7 +402,7 @@ const menuList = [
         name: "Green Apple",
         price: null,
         category: "fruitea",
-        image: "images/ftgreen.webp",
+        image: "Images/ftgreen.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:39 },
@@ -415,7 +415,7 @@ const menuList = [
         name: "Lychee",
         price:null ,
         category: "fruitea",
-        image: "images/ftlychee.webp",
+        image: "Images/ftlychee.webp",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:39 },
@@ -428,7 +428,7 @@ const menuList = [
         name: "Passion Fruit",
         price: null,
         category: "fruitea",
-        image: "images/ftpassion.webp",
+        image: "Images/ftpassion.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:39 },
@@ -441,7 +441,7 @@ const menuList = [
         name: "Lemon",
         price: null,
         category: "fruitea",
-        image: "images/ftlemon.webp",
+        image: "Images/ftlemon.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:39 },
@@ -454,7 +454,7 @@ const menuList = [
         name: "Choco Lava Float",
         price:null ,
         category: "float",
-        image: "images/floatc.webp",
+        image: "Images/floatc.webp",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:80 },
@@ -467,7 +467,7 @@ const menuList = [
         name: "Coffee Float",
         price: null,
         category: "float",
-        image: "images/floatcof.webp",
+        image: "Images/floatcof.webp",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:80 },
@@ -480,7 +480,7 @@ const menuList = [
         name: "Strawberry Milk Float",
         price: null,
         category: "float",
-        image: "images/floats.webp",
+        image: "Images/floats.webp",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:80 },
@@ -493,7 +493,7 @@ const menuList = [
         name: "Blueberry Milk Float",
         price:null,
         category: "float",
-        image: "images/floatb.webp",
+        image: "Images/floatb.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:80 },
@@ -506,7 +506,7 @@ const menuList = [
         name: "Milky Mango Float",
         price: null,
         category: "float",
-        image: "images/floatm.webp",
+        image: "Images/floatm.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:80 },
@@ -519,7 +519,7 @@ const menuList = [
         name: "Coke Float",
         price: 55,
         category: "float",
-        image: "images/floatcoke.webp",
+        image: "Images/floatcoke.webp",
         bestSeller: true,
         varieties: [
         ],
@@ -530,7 +530,7 @@ const menuList = [
         name: "Strawberry Puree with Lemonade",
         price: 80,
         category: "freshdrink",
-        image: "images/1000031131.webp",
+        image: "Images/1000031131.webp",
         bestSeller: false,
         varieties: [
             
@@ -542,7 +542,7 @@ const menuList = [
         name: "Fresh Lemon",
         price: null,
         category: "freshdrink",
-        image: "images/freshpurelemon.webp",
+        image: "Images/freshpurelemon.webp",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:49 },
@@ -555,7 +555,7 @@ const menuList = [
         name: "Fresh Lemon with Yakult",
         price: null,
         category: "freshdrink",
-        image: "images/1000031132.webp",
+        image: "Images/1000031132.webp",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:69 },
@@ -568,7 +568,7 @@ const menuList = [
         name: "Chicken Wings",
         price: null,
         category: "platters",
-        image: "images/1000031094.webp",
+        image: "Images/1000031094.webp",
         bestSeller: false,
         varieties: [
             { name: "4 pcs", price: 125 },
@@ -587,7 +587,7 @@ const menuList = [
         name: "Bilao good for 5 pax (Butterfly squid, porkchop, 8 pcs siomai, 6 pcs shanghai, 3pcs egg and 5 cups of Pork Chaofan",
         price: 520,
         category: "platters",
-        image: "images/1000031093.webp",
+        image: "Images/1000031093.webp",
         bestSeller: true,
         varieties: [
       
@@ -599,7 +599,7 @@ const menuList = [
         name: "Shanghai",
         price: null,
         category: "platters",
-        image: "images/1000031095.webp",
+        image: "Images/1000031095.webp",
         bestSeller: true,
         varieties: [
             { name: "12 pcs", price: 120 },
@@ -613,7 +613,7 @@ const menuList = [
         name: "Siomai",
         price: null,
         category: "platters",
-        image: "images/1000031096.webp",
+        image: "Images/1000031096.webp",
         bestSeller: true,
         varieties: [
             { name: "12 pcs", price: 90 },
@@ -627,7 +627,7 @@ const menuList = [
         name: "Pork Chao Fan Platter",
         price: 169,
         category: "platters",
-        image: "images/chaofanPlatter.webp",
+        image: "Images/chaofanPlatter.webp",
         bestSeller: true,
         varieties: [
             { name: "Bagoong Chaofan Platter", price: 199 },
@@ -639,7 +639,7 @@ const menuList = [
         name: "Caramel and Graham Ice Cream",
         price: null,
         category: "icecream",
-        image: "images/CaramelIcecream.webp",
+        image: "Images/CaramelIcecream.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium", price:39 },
@@ -652,7 +652,7 @@ const menuList = [
         name: "Strawberry w/ Oreo Ice Cream",
         price: null,
         category: "icecream",
-        image: "images/StrawberryIcecream.webp",
+        image: "Images/StrawberryIcecream.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium", price:39 },
@@ -665,7 +665,7 @@ const menuList = [
         name: "Blueberry with Nata Ice Cream",
         price: null,
         category: "icecream",
-        image: "images/BlueberryIcecream.webp",
+        image: "Images/BlueberryIcecream.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium", price:39 },
@@ -678,7 +678,7 @@ const menuList = [
         name: "Chocolate w/ Oreo Ice Cream",
         price: null,
         category: "icecream",
-        image: "images/COIcecream.webp",
+        image: "Images/COIcecream.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium", price:39 },
@@ -691,7 +691,7 @@ const menuList = [
         name: "Plain Vanilla Ice Cream",
         price: null,
         category: "icecream",
-        image: "images/PlainIcecream.webp",
+        image: "Images/PlainIcecream.webp",
         bestSeller: true,
         varieties: [
             { name: "Medium", price:39 },
@@ -704,7 +704,7 @@ const menuList = [
         name: "Plain Yogurt",
         price: null,
         category: "yogurt",
-        image: "images/PlainYogurt.WEBP",
+        image: "Images/PlainYogurt.WEBP",
         bestSeller: true,
         varieties: [
             { name: "Medium", price:69 },
@@ -717,7 +717,7 @@ const menuList = [
         name: "French Fries",
         price: 75,
         category: "snacks",
-        image: "images/1000031104.webp",
+        image: "Images/1000031104.webp",
         bestSeller: true,
         varieties: [
             { name: "Cheesy Fries", price: 99 },
@@ -730,7 +730,7 @@ const menuList = [
         name: "Cheesy Carbonara Noodles Buldak",
         price: 130,
         category: "snacks",
-        image: "images/1000031097.webp",
+        image: "Images/1000031097.webp",
         bestSeller: true,
         varieties: [
             { name: "Cheesy Carbonara Noodles Buldak Overload", price: 180 },
@@ -743,7 +743,7 @@ const menuList = [
         name: "Classic Milk Tea",
         price: null,
         category: "milktea",
-        image: "images/Cmilktea.webp",
+        image: "Images/Cmilktea.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:70 },
@@ -756,7 +756,7 @@ const menuList = [
         name: "Oreo Cream cheese Milk Tea",
         price: null,
         category: "milktea",
-        image: "images/CCmilktea.webp",
+        image: "Images/CCmilktea.webp",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:110 },
@@ -769,7 +769,7 @@ const menuList = [
         name: "Oreo Milk Tea",
         price: null,
         category: "milktea",
-        image: "images/Omilktea.webp",
+        image: "Images/Omilktea.webp",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:90 },
