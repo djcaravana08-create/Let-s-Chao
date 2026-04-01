@@ -704,7 +704,7 @@ const menuList = [
         name: "Plain Yogurt",
         price: null,
         category: "yogurt",
-        image: "Images/PlainYogurt.WEBP",
+        image: "Images/PlainYogurt.webp",
         bestSeller: true,
         varieties: [
             { name: "Medium", price:69 },
